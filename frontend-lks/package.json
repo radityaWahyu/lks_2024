@@ -1,5 +1,5 @@
 {
-  "name": "frontend_lks",
+  "name": "frontend-lks",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -11,6 +11,8 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.6.5",
     "bootstrap": "^5.3.2",
     "pinia": "^2.1.7",
     "vue": "^3.3.11",
