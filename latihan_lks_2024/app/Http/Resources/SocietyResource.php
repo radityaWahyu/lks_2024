@@ -16,9 +16,12 @@ class SocietyResource extends JsonResource
     {
         return [
             'id_society' => $this->id,
+            'id_card_number' => $this->id_card_number,
             'name' => $this->name,
             'born_date' => $this->born_date,
-            'gender' => $this->gender == 'male' ? 'Laki - laki' : 'Perempuan'
+            'gender' => $this->gender,
+            'address' => $this->address,
+            'regional_id' => $this->regional_id
         ];
     }
 }

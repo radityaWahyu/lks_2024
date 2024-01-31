@@ -22,6 +22,9 @@
           <li class="nav-item">
             <router-link to="/kontak" class="nav-link active">Kontak</router-link>
           </li>
+          <li class="nav-item">
+            <router-link to="/crud" class="nav-link active">CRUD</router-link>
+          </li>
         </ul>
       </div>
     </div>

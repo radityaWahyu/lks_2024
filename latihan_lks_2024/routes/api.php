@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\api\RegionalController;
 use App\Http\Controllers\api\SocietyController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,5 +20,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 Route::prefix('v1')->group(function () {
-    Route::resource('society', SocietyController::class);
+    Route::apiResource('society', SocietyController::class);
+    Route::get('regional/list', [RegionalController::class, 'list']);
 });

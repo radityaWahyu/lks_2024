@@ -32,6 +32,30 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/KontakView.vue')
+    },
+    {
+      path: '/crud',
+      name: 'crud',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/CrudView.vue')
+    },
+    {
+      path: '/crud/add',
+      name: 'crud-add',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/AddSocietyView.vue')
+    },
+    {
+      path: '/crud/edit/:id',
+      name: 'crud-edit',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/EditSocietyView.vue')
     }
   ]
 })
