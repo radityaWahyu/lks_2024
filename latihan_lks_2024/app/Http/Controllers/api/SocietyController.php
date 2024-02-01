@@ -16,7 +16,7 @@ class SocietyController extends Controller
      */
     public function index()
     {
-        $query = Society::get();
+        $query = Society::with('regional')->get();
 
         return response()->json([
             'message' => 'Data berhasil di temukan',
